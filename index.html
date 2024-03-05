@@ -12,7 +12,7 @@
    body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: rgb(26, 102, 79);
     color: white;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -51,7 +51,7 @@
     gap: 5vh;
    }
    .first-container-title {
-    width: 70vw;
+    width: 60vw;
    }
    .first-container-title p {
     text-align: justify;
@@ -70,22 +70,21 @@
     display: flex;
     justify-content: center;
     gap: 5vw;
-    /* align-items: center; */
     margin: 10vh 0;
    }
    .second-container-item {
-    /* background-color: #ebc222; */
     background-color: #fff;
     color: black;
-    width: 12vw;
-    padding: 10px 35px;
+    width: 15vw;
+    padding: 10px 2px;
     border: 10px double black;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
    }
 
-   li {
+   .second-container-item li {
     font-size: 20px;
    }
 
@@ -98,13 +97,26 @@
     flex-direction: column;
     align-items: center;
     margin: 10vh 0;
+    /* border: 10px double white;  */
+   }
+     .third-container-inside{
+     display: flex;
+    justify-content: center;
+    gap: 2vw;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    padding: 40px;
+    border: 3px solid white; 
+    border-radius: 40px;
+
    }
    .third-title {
     font-size: 30px;
     font-weight: 600;
    }
    .third-form-container {
-    width: 30%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,6 +129,7 @@
     height: 30px;
     width: 100%;
     margin: 10px 0;
+    background:white;
     border-radius: 10px;
    }
    .third-button {
@@ -183,7 +196,7 @@
   <!-- Second Section -->
   <div class="second-container">
    <div class="second-container-item">
-    <h1>Eğitimim</h1>
+    <h2>Eğitimim</h2>
     <ul>
      <li>İlkokul</li>
      <li>Ortaokul</li>
@@ -192,7 +205,7 @@
     </ul>
    </div>
    <div class="second-container-item">
-    <h1>İlgi Alanlarım</h1>
+    <h2>İlgi Alanlarım</h2>
     <ul>
      <li>İlkokul</li>
      <li>Ortaokul</li>
@@ -201,7 +214,7 @@
     </ul>
    </div>
    <div class="second-container-item">
-    <h1>Hobilerim</h1>
+    <h2>Hobilerim</h2>
     <ul>
      <li>Spor yapmak</li>
      <li>Film izlemek</li>
@@ -212,15 +225,20 @@
   </div>
   <!-- Third Section -->
   <div class="third-container">
-   <label class="third-title">Bana Ulaşın</label>
-   <div class="third-form-container">
-    <label class="third-form-label" for="name">İsim Soyisim</label>
-    <input id="name" type="text" placeholder=" İsim" class="third-form" />
-    <label class="third-form-label" for="email"
-     >E-Posta adresinizi giriniz</label
-    >
-    <input type="email" id="email" placeholder=" E-Posta" class="third-form" />
-    <button class="third-button">Kaydet</button>
+   <div class="third-container-inside">
+    <label class="third-title">Bana Ulaşın</label>
+
+    <div class="third-form-container">
+     <label class="third-form-label" for="name">İsim Soyisim</label>
+     <input id="name" type="text" placeholder=" İsim" class="third-form" />
+
+     <label class="third-form-label" for="email"
+      >E-Posta adresinizi giriniz</label
+     >
+     <input type="email" id="email" placeholder=" E-Posta" class="third-form" />
+
+     <button class="third-button">Kaydet</button>
+    </div>
    </div>
   </div>
   <!-- Footer -->
